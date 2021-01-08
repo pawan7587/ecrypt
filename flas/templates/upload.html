@@ -1,0 +1,35 @@
+<html>
+   <body>
+      <section  style="background-color:#ff7f50; width: 40%">
+         <h1 style="font-size:40px;">Encryption</h1>
+         <form action = "http://localhost:5000/encrypt" method = "POST" 
+            enctype = "multipart/form-data">
+            
+            <p style=" font-size: 25px;">Provide the file and Password here:- </p>
+            <p style="font-size: 20px;"> <input type = "file" name = "file" style="font-size: 18px;" /> 
+            Password  <input name="text"></p>
+            <p style="text-align:center"><input type = "submit" style="font-size: 22px;"  /></p>          
+         </form>  
+         <form action = "http://localhost:5000/reload" method = "POST" 
+            enctype = "multipart/form-data">
+            <p style="text-align:center"><input type = "submit" value = "Add another file"style="font-size: 22px;"  /></p>          
+         </form> 
+      </section>
+      <section  style="background-color:#8d50ff; width: 40%">
+         <h1 style="font-size:40px;">Decryption</h1>
+         <form action = "http://localhost:5000/decrypt" method = "POST" 
+            enctype = "multipart/form-data">
+            
+            <p style=" font-size: 25px;">Provide the file and Password here:- </p>
+            <p style="font-size: 20px;"> <input type = "file" name = "file" style="font-size: 18px;" /> 
+            Password  <input name="text"></p>
+            <p style="text-align:center"><input type = "submit" style="font-size: 22px;"  /></p>                      
+         </form>  
+         <form action = "http://localhost:5000/reload" method = "POST" 
+            enctype = "multipart/form-data">
+            <p style="text-align:center"><input type = "submit" value = "Add another file"style="font-size: 22px;"  /></p>          
+         </form> 
+      </section>
+   </body>
+</html> 
+
