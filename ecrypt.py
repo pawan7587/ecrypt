@@ -4,7 +4,7 @@ import pyAesCrypt
 import os
 app = Flask(__name__)
 
-@app.route('/upload')
+@app.route('/')
 def upload_file():
    return render_template('upload.html')
 
